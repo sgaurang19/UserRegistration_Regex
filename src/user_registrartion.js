@@ -56,5 +56,6 @@ function checkPassword(pass){
 }
 var pass = "Fabcdefgh";
 checkPassword(pass);
+
  
 // UC for At least 1 Upper Case
