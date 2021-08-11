@@ -46,13 +46,15 @@ checkMobile(mob);
 
 // UC5 : Valid Password (length 8)
 function checkPassword(pass){
-    var regexPass = /^[a-z]{8,}$/;
+    var regexPass = /(?=.*[a-z])(?=.*[A-Z])[a-zA-Z\d]{8,}$/;
     var result = regexPass.test(pass);
     if(result == 1){
         console.log("Valid Password");
     }else{
-        console.log("Please Enter at least 8 charachters");
+        console.log("Please Enter at least 1 Upper Case charachters");
     }
 }
-var pass = "abcdefgh";
+var pass = "Fabcdefgh";
 checkPassword(pass);
+ 
+// UC for At least 1 Upper Case
