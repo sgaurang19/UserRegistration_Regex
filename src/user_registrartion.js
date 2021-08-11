@@ -1,3 +1,4 @@
+// UC1 : Valid First name
 function checkName(name1){
     var regexName = /^[A-Z ][a-z]{2,30}$/;
     var result = regexName.test(name1);
