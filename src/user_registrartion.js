@@ -43,3 +43,16 @@ function checkMobile(mob){
 
 var mob = "91 9919819801";
 checkMobile(mob);
+
+// UC5 : Valid Password (length 8)
+function checkPassword(pass){
+    var regexPass = /^[a-z]{8,}$/;
+    var result = regexPass.test(pass);
+    if(result == 1){
+        console.log("Valid Password");
+    }else{
+        console.log("Please Enter at least 8 charachters");
+    }
+}
+var pass = "abcdefgh";
+checkPassword(pass);
