@@ -29,3 +29,17 @@ function checkEmail(em){
 }
 var email = "abc.xyz@bl.co.in";
 checkEmail(email);
+
+//UC4 : Valid Mobile 
+function checkMobile(mob){
+    var regexMob = /^[9][1][ ][6-9][0-9]{9}$/;
+    var result = regexMob.test(mob);
+    if(result == 1){
+        console.log("Valid Mobile");
+    }else{
+        console.log("Please Enter Valid Mobile");
+    }
+}
+
+var mob = "91 9919819801";
+checkMobile(mob);
