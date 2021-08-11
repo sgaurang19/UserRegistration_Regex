@@ -11,3 +11,7 @@ function checkName(name1){
 
 var firstName = "Gaurang";
 checkName(firstName);
+
+//UC2 : Valid Last Name
+var lastName = "Shirsat";
+checkName(lastName);
